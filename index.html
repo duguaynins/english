@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <!-- 關鍵：防止手機瀏覽器自動縮放，強制 1:1 像素呈現 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>手機全螢幕 AI 應用</title>
+    <style>
+        /* 清除手機瀏覽器預設的邊距，並鎖定視口 */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* 防止外層網頁出現橡皮筋回彈或雙滾動條 */
+            background-color: #000; /* 載入前的背景色，可依你的 App 風格調整 */
+        }
+        
+        iframe {
+            display: block; /* 消除內聯元素的底部微小間隙 */
+            width: 100vw;   /* 撐滿手機寬度 */
+            height: 100dvh; /* 撐滿手機動態高度（會自動扣除 Safari/Chrome 的網址列與工具列） */
+            border: none;   /* 不要邊框 */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+      title: 提高無障礙體驗
+      sandbox: 安全防護，只允許執行指令碼與表單（若 App 需要下載檔案，可再加上 allow-downloads）
+    -->
+<iframe
+	src="https://duguaynins-english.hf.space/"
+	frameborder="0"
+	width="100vw"
+	height="100dvh"
+	style="width: 100vw; height: 100dvh;"
+></iframe>
+
+</body>
+</html>
